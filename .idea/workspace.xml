@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/Collect_Data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Coll.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collect_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collect_Data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +30,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.learning">
     <configuration name="Collect_Data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,8 +56,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.learning" />
         <item itemvalue="Python.Collect_Data" />
       </list>
     </recent_temporary>
@@ -86,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594641421112</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1594642149971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594642149971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -104,41 +134,72 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594643593530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594643593530" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1594641721842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594641721842" />
-    <state x="1219" y="264" key="FileChooserDialogImpl" timestamp="1594640980646">
+    <state x="1219" y="264" key="FileChooserDialogImpl" timestamp="1594778959318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594640980646" />
-    <state width="915" height="281" key="GridCell.Tab.0.bottom" timestamp="1594642039812">
+    <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594778959318" />
+    <state width="906" height="282" key="GridCell.Tab.0.bottom" timestamp="1594783855132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594642039812" />
-    <state width="915" height="281" key="GridCell.Tab.0.center" timestamp="1594642039811">
+    <state width="906" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594783855132" />
+    <state width="906" height="282" key="GridCell.Tab.0.center" timestamp="1594783855132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594642039811" />
-    <state width="915" height="281" key="GridCell.Tab.0.left" timestamp="1594642039811">
+    <state width="906" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594783855132" />
+    <state width="906" height="282" key="GridCell.Tab.0.left" timestamp="1594783855132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594642039811" />
-    <state width="915" height="281" key="GridCell.Tab.0.right" timestamp="1594642039811">
+    <state width="906" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594783855132" />
+    <state width="906" height="282" key="GridCell.Tab.0.right" timestamp="1594783855132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594642039811" />
-    <state x="710" y="197" key="SettingsEditor" timestamp="1594641808395">
+    <state width="906" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594783855132" />
+    <state width="1293" height="341" key="GridCell.Tab.1.bottom" timestamp="1594649094068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594641808395" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1594641595227">
+    <state width="1293" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
+    <state width="1293" height="341" key="GridCell.Tab.1.center" timestamp="1594649094068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594641595227" />
+    <state width="1293" height="341" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
+    <state width="1293" height="341" key="GridCell.Tab.1.left" timestamp="1594649094068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="341" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
+    <state width="1293" height="341" key="GridCell.Tab.1.right" timestamp="1594649094068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="341" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
+    <state x="710" y="197" key="SettingsEditor" timestamp="1594778965121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594778965121" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1594642166636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594642166636" />
     <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594641687576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594641687576" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Collect_Data.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
