@@ -7,6 +7,7 @@
 @Desc   ：
 =================================================='''
 import os
+import select
 import getopt
 from sys import argv
 import multiprocessing
@@ -17,11 +18,25 @@ from utils import *
 import cv2
 import numpy as np
 import time
+import argparse
 
-#os.path.split(os.path.realpath(__file__)) = ('path','Collect_Data.py')
+
 path = os.path.split(os.path.realpath(__file__))[0] + "/.."
 
-opts,args = getopt.getopt(argv[1:],'-hH',['vels=','output=','serial=','camera=','save_name='])
+
+'''
+传参的设定，其中最终生成文件的及别
+|output_data
+|--img_dir
+|--data.npy
+'''
+parser = argparse.ArgumentParser()
+parser.add_argument('--vels',dest='speed',default=1560,type = int)
+parser.add_argument('--outputs',dest='output_data',default='data',type = str)
+parser.add_argument('--serial',dest = 'serial',default='/dev/ttyUSB0',type = str)
+parser.add_argument('--camera',dest='camera',default='/dev/video0',type = str)
+parser.add_argument('-img_dir_name',dest = 'img_dir',default='img',type=str)
+args = parser.parse_args()
 
 '''分配共享内存空间'''
 camera = multiprocessing.Array("b",range(50))#camera
@@ -29,39 +44,13 @@ serial = multiprocessing.Array("b",range(50))#serial
 output_data = multiprocessing.Array("b",range(50))#output_data
 Speed = multiprocessing.Array("i",range(2))#speed and angle (int)
 
-'''#参数的设定'''
-camera.value = "/dev/video0"
-output_data.value = "data"
-Speed[0]  = 1560
-Speed[1]  = 1500
-serial.value = "/dev/ttyUSB0"
-save_name="img"
-
-'''传参的处理'''
-for opt_name,opt_value in opts:
-    if opt_name in ('-h','-H'):
-        print("默认参数 --vels={0} --output={1} --serial={2} --camera={3}  --save_name={4}".format(Speed[0],
-                                                                                                  output_data.value,
-                                                                                                  serial.value,
-                                                                                                  camera.value,
-                                                                                                  save_name))
-        exit()
-    if opt_name in ('--vels'):
-        Speed[0] = int(opt_value)
-
-    if opt_name in ('--output'):
-        output_data.value = opt_value
-
-    if opt_name in ('--serial'):
-        serial.value = opt_value
-
-    if opt_name in ('--camera'):
-        camera.value = opt_value
-        print("camera.value=", camera.value)
-
-    if opt_name in ('--save_name'):
-        save_name = opt_value
-        print("save_name=", save_name)
+'''参数的设定'''
+camera.value = args.camera
+output_data.value = args.output_data
+Speed[0]  = int(args.speed)
+Speed[1]  = 1500 #angle initialize
+serial.value = args.serial
+save_name = args.img_dir
 
 '''创建一个互斥锁，默认是没有上锁的 '''
 lock = multiprocessing.Manager().Lock()
