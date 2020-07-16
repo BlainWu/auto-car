@@ -31,10 +31,10 @@ path = os.path.split(os.path.realpath(__file__))[0] + "/.."
 |--data.npy
 '''
 parser = argparse.ArgumentParser()
-parser.add_argument('--vels',dest='speed',default=1560,type = int)
+parser.add_argument('--vels',dest='speed',default=1540,type = int)
 parser.add_argument('--outputs',dest='output_data',default='data',type = str)
 parser.add_argument('--serial',dest = 'serial',default='/dev/ttyUSB0',type = str)
-parser.add_argument('--camera',dest='camera',default='/dev/video0',type = str)
+parser.add_argument('--camera',dest='camera',default='/dev/video2',type = str)
 parser.add_argument('-img_dir_name',dest = 'img_dir',default='img',type=str)
 args = parser.parse_args()
 
@@ -64,9 +64,8 @@ def save_image_process(lock,n,status,start,Camera):
     mkdir(path+"/data")
     mkdir(path+"/data/"+save_name)
 
-    #video = v4l2capture.Video_device("/dev/video0")
     video = v4l2capture.Video_device(Camera.value)
-    video.set_format(1280, 720, fourcc='MJPG')
+    video.set_format(424, 240, fourcc='MJPG')
     video.create_buffers(1)
     video.queue_all_buffers()
     video.start()
@@ -75,7 +74,6 @@ def save_image_process(lock,n,status,start,Camera):
     while(start.value == False):
         pass
     while status.value:#PS2 tr or tl control stop
-        #print("status",status.value)
         select.select((video,), (), ())
         image_data = video.read_and_queue()
         frame = cv2.imdecode(np.frombuffer(image_data, dtype=np.uint8), cv2.IMREAD_COLOR)
@@ -91,7 +89,6 @@ def save_image_process(lock,n,status,start,Camera):
 
 '''保存速度和角度'''
 def save_data_process(lock,n,data,run):
-    #angledata = []
     file_write = open(path+"/data/"+ output_data.value+".txt","a")
     while run.value:
         while(n.value):
@@ -107,6 +104,8 @@ def save_data_process(lock,n,data,run):
 def control_car_process(data, status, run, start):
     max_num = 2100
     min_num = 700
+    common_turn = 310
+    sharp_turn = 800
     while run.value:
         speed_car = data[0]
         angle_car = 1500
@@ -143,33 +142,15 @@ def control_car_process(data, status, run, start):
                                 data[0] = 1500
                                 data[1] = 1500
                                 lib.send_cmd(1500, 1500)
-                            if (button == "tr2" and button_states[button] == True):
-                                # speed up
-                                speed1 = data[0] + 5
-                                if speed1>=max_num:
-                                    speed1 = max_num
-                                speed_car = speed1
-                                data[0] = speed_car
-                                data[1] = angle_car
-                                lib.send_cmd(speed_car, angle_car)
-                            if (button == "tl2" and button_states[button] == True):
-                                # speed down
-                                speed1 = data[0] - 5
-                                if speed1<=min_num:
-                                    speed1 = min_num
-                                speed_car = speed1
-                                data[0] = speed_car
-                                data[1] = angle_car
-                                lib.send_cmd(speed_car, angle_car)
                     if (start.value == True):  # PS2 control speed and angle start
                         if type & 0x02:
                             axis = axis_map[number]
                             if axis:
+                                #左滑轮x轴
                                 if axis == "x":
-
                                     fvalue = value / 32767
                                     axis_states[axis] = fvalue
-                                    angle1 = 1500 - (fvalue * min_num)
+                                    angle1 = 1500 - (fvalue * common_turn)
                                     if angle1 <= min_num:
                                         angle1 = min_num
                                     if angle1 >= max_num:
@@ -179,6 +160,22 @@ def control_car_process(data, status, run, start):
                                     data[0] = speed_car
                                     data[1] = angle_car
                                     lib.send_cmd(speed_car, angle_car)
+                                #右滑钮x轴，控制急转弯
+                                if axis == "z":
+                                    fvalue = value / 32767
+                                    axis_states[axis] = fvalue
+                                    angle1 = 1500 - (fvalue * sharp_turn)
+                                    if angle1 <= min_num:
+                                        angle1 = min_num
+                                    if angle1 >= max_num:
+                                        angle1 = max_num
+                                    angle_car = int(angle1)
+
+                                    data[0] = speed_car
+                                    data[1] = angle_car
+                                    lib.send_cmd(speed_car, angle_car)
+                                #左滑钮y轴为y，右滑钮y轴为rz
+
 
         except:
             print("car run error")
