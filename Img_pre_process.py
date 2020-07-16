@@ -47,8 +47,8 @@ if __name__ == "__main__":
     save_path = os.path.join(path,save_path)
 
     #window下需要执行以下代码
-    img_dir = img_dir.replace('\\','/')
-    save_path = save_path.replace('\\', '/')
+    #img_dir = img_dir.replace('\\','/')
+    #save_path = save_path.replace('\\', '/')
 
     mkdir(save_path)
     img_extract(img_dir,save_path)
