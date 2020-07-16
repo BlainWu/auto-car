@@ -104,8 +104,9 @@ def save_data_process(lock,n,data,run):
 def control_car_process(data, status, run, start):
     max_num = 2100
     min_num = 700
-    common_turn = 310
-    sharp_turn = 800
+    common_turn = 310           #普通转弯率
+    sharp_turn = 800            #急转弯率
+    speed_offset = 20           #速度偏移量
     while run.value:
         speed_car = data[0]
         angle_car = 1500
@@ -171,6 +172,15 @@ def control_car_process(data, status, run, start):
                                         angle1 = max_num
                                     angle_car = int(angle1)
 
+                                    data[0] = speed_car
+                                    data[1] = angle_car
+                                    lib.send_cmd(speed_car, angle_car)
+
+                                if axis == "rz":#右滑钮上下控制加速减速
+                                    fvalue = value/32767
+                                    axis_states[axis] = fvalue
+                                    speed1 = args.speed - (fvalue * speed_offset)
+                                    speed_car = int(speed1)
                                     data[0] = speed_car
                                     data[1] = angle_car
                                     lib.send_cmd(speed_car, angle_car)
