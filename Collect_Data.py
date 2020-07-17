@@ -94,7 +94,7 @@ def save_data_process(lock,n,data,run):
             n.value = False
             lock.release()
             print("speed=",data[0],"  angle=",data[1])
-            file_write.write(str(data[1]))
+            file_write.write("{0},{1}".format(data[0],data[1]))
             file_write.write("\n")
             file_write.flush()
 
@@ -105,7 +105,7 @@ def control_car_process(data, status, run, start):
     turn_ratio = 300            #转弯率
     turn_ratio_1 = 300          #一档转弯
     turn_ratio_2 = 290          #二档转弯
-    turn_ratio_3 = 270          #三档转弯
+    turn_ratio_3 = 290          #三档转弯
     turn_ratio_4 = 265          #四档转弯
     sharp_turn = 800            #急转弯率
     speed_offset = 20           #速度偏移量
@@ -156,6 +156,12 @@ def control_car_process(data, status, run, start):
                             if (button == "x" and button_states[button] == True):
                                 turn_ratio = turn_ratio_3
                             # 切换四档转向
+                            if (button == "y" and button_states[button] == True):
+                                turn_ratio = turn_ratio_4
+                            # 速度增加
+                            if (button == "y" and button_states[button] == True):
+                                turn_ratio = turn_ratio_4
+                            # 速度减小
                             if (button == "y" and button_states[button] == True):
                                 turn_ratio = turn_ratio_4
 
@@ -245,7 +251,7 @@ if __name__ == '__main__':
                 RUN.value = False
                 print("STOP CAR")
                 print("TXT to npy")
-                txt_2_numpy()
+                #txt_2_numpy()
                 break
     except:
         RUN.value = False
