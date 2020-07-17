@@ -48,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../all-contributors-cli-master" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Python.Img_pre_process">
@@ -219,7 +219,42 @@
       <option name="project" value="LOCAL" />
       <updated>1594827087586</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1594827422121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594827422121</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1594827471478</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1594827471478</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1594829375981</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1594829375981</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update">
+      <created>1594912963305</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594912963305</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update">
+      <created>1594914644802</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1594914644802</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -257,14 +292,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="972" y="337" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594806114634" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1594641721842">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1594914875919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594641721842" />
-    <state x="1219" y="264" key="FileChooserDialogImpl" timestamp="1594778959318">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594914875919" />
+    <state x="1219" y="264" key="FileChooserDialogImpl" timestamp="1594957369484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594778959318" />
+    <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594957369484" />
     <state width="936" height="282" key="GridCell.Tab.0.bottom" timestamp="1594827260001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -301,21 +336,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594792364911" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1594827328282">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1594914877244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594827328282" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594914877244" />
     <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594641687576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594641687576" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1594912755595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1594912755595" />
+    <state x="672" y="306" key="git4idea.merge.GitPullDialog" timestamp="1594905893837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594905893837" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1594982995007">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594982995007" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Collect_Data.py</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
