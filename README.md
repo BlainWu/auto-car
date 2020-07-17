@@ -20,4 +20,10 @@
 ## 贡献者们  
 吴沛林  
 吴奕之  
-汪璠
+
+## 问题日志
+* ~~采集数据的时候内存不够，导致程序崩溃，小车失灵~~  
+```解决方法
+nohup python Collect_Data.py
+```
+参考： [Linux nohup和&的功效](https://www.cnblogs.com/laoyeye/p/9346330.html)
