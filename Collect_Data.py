@@ -8,8 +8,6 @@
 =================================================='''
 import os
 import select
-import getopt
-from sys import argv
 import multiprocessing
 import v4l2capture
 from ctypes import *
@@ -104,7 +102,11 @@ def save_data_process(lock,n,data,run):
 def control_car_process(data, status, run, start):
     max_num = 2100
     min_num = 700
-    common_turn = 310           #普通转弯率
+    turn_ratio = 300            #转弯率
+    turn_ratio_1 = 300          #一档转弯
+    turn_ratio_2 = 290          #二档转弯
+    turn_ratio_3 = 270          #三档转弯
+    turn_ratio_4 = 265          #四档转弯
     sharp_turn = 800            #急转弯率
     speed_offset = 20           #速度偏移量
     while run.value:
@@ -131,18 +133,32 @@ def control_car_process(data, status, run, start):
                         button = button_map[number]
                         if button:
                             button_states[button] = value
-                            if (button == "b" and button_states[button] == True):
+                            #启动键设置为tl
+                            if (button == "tl" and button_states[button] == True):
                                 start.value = True
                                 print("START")
                                 lib.send_cmd(speed_car, angle_car)
-                            if ((button == "tr" and button_states[button] == True) or (
-                                    button == "tl" and button_states[button] == True)):
+                            #停止按键
+                            if ((button == "tr" and button_states[button] == True)):
                                 # Stop
                                 print("Stop")
                                 status.value = False
                                 data[0] = 1500
                                 data[1] = 1500
                                 lib.send_cmd(1500, 1500)
+                            #切换一档转向
+                            if (button == "a" and button_states[button] == True):
+                                turn_ratio = turn_ratio_1
+                            # 切换二档转向
+                            if (button == "b" and button_states[button] == True):
+                                turn_ratio = turn_ratio_2
+                            # 切换三档转向
+                            if (button == "x" and button_states[button] == True):
+                                turn_ratio = turn_ratio_3
+                            # 切换四档转向
+                            if (button == "y" and button_states[button] == True):
+                                turn_ratio = turn_ratio_4
+
                     if (start.value == True):  # PS2 control speed and angle start
                         if type & 0x02:
                             axis = axis_map[number]
@@ -151,7 +167,7 @@ def control_car_process(data, status, run, start):
                                 if axis == "x":
                                     fvalue = value / 32767
                                     axis_states[axis] = fvalue
-                                    angle1 = 1500 - (fvalue * common_turn)
+                                    angle1 = 1500 - (fvalue * turn_ratio)
                                     if angle1 <= min_num:
                                         angle1 = min_num
                                     if angle1 >= max_num:
