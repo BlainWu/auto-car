@@ -25,6 +25,15 @@
             ↓
 ```
 
+## 程序说明  
+### Creat_Dataset.py  
+```buildoutcfg
+传参：
+    --origin_dir 原始数据目录，默认"./dataset_origin"  
+    --target_dir 生成的最终数据文件夹，默认"./dataset"
+功能：
+    默认搜索的子数据集名称为round{数字},进行数据校验，保存至目标文件夹内（不需要预先建文件夹，已有文件夹会被覆盖）。
+```
 
 ## 贡献者们  
 吴沛林  
