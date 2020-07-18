@@ -49,8 +49,8 @@ optimizer = fluid.optimizer.AdamOptimizer(learning_rate=0.01)
 opts = optimizer.minimize(avg_cost)
 
 # 获取自定义数据
-train_reader = paddle.batch(reader=Data_Reader.train_reader(train_list, crop_size, resize_size), batch_size=32)
-test_reader = paddle.batch(reader=Data_Reader.test_reader(test_list, crop_size), batch_size=32)
+train_reader = paddle.batch(reader=Data_Reader.train_reader(train_list_path, crop_size, resize_size), batch_size=32)
+test_reader = paddle.batch(reader=Data_Reader.test_reader(test_list_path, crop_size), batch_size=32)
 
 # 定义执行器
 #place = fluid.CPUPlace()  #CPU训练
