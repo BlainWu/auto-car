@@ -10,10 +10,25 @@ import os
 from utils import mkdir
 import shutil
 import numpy as np
+import cv2
 import argparse
 from tqdm import tqdm
 
-def unite_all(origin_dir,target_dir,img_name = 'img',data_name = 'data.txt'):
+
+def img_extract(img_dir,save_path):
+    mkdir(save_path)
+    img_names = os.listdir(img_dir)
+    lower_hsv = np.array([26, 43, 46])
+    upper_hsv = np.array([34, 255, 255])
+    print("\n生成二值特征图")
+    for img_name in tqdm(img_names):
+        img_path = os.path.join(img_dir,img_name)
+        img = cv2.imread(img_path)
+        hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+        mask = cv2.inRange(hsv,lowerb=lower_hsv, upperb=upper_hsv)
+        cv2.imwrite(os.path.join(save_path,img_name),mask)
+
+def unite_all(origin_dir,target_dir,img_name = 'img',data_name = 'data.txt',hsv_name = 'hsv_img'):
     """
     :param origin_dir: 多数据集的文件夹位置
     :param target_dir: 最终生成数据集位置
@@ -53,6 +68,7 @@ def unite_all(origin_dir,target_dir,img_name = 'img',data_name = 'data.txt'):
                 img_path = os.path.join(imgs_path,value)#目前图片所处位置
                 img_path = img_path.replace("\\", "/")  # 在win系统下需要此行
                 det_path = os.path.join(target_dir_img,"{}.jpg".format(pic_ind))
+                det_path = det_path.replace("\\", "/")  # 在win系统下需要此行
                 shutil.copyfile(img_path,det_path) #重命名并且复制到img文件夹中
                 pic_ind += 1
             #文本添加
@@ -67,8 +83,10 @@ def unite_all(origin_dir,target_dir,img_name = 'img',data_name = 'data.txt'):
 
     #保存txt
     np.savetxt(os.path.join(target_dir,data_name),total_data,fmt='%d')
+    img_extract(target_dir_img,os.path.join(target_dir,hsv_name).replace('\\','/'))#特征提取
     print("---------------------------------------------------")
     print('\n总共保存图片{0}张，数据{1}条'.format(pic_ind,len(total_data)))
+
 
 
 
@@ -82,4 +100,5 @@ if __name__ == "__main__":
     target_dir = args.target_dir
 
     unite_all(origin_dir,target_dir)
+    #img_extract('./dataset/img','./dataset/hsv_img') #单独转色
 
