@@ -65,16 +65,25 @@
 ```buildoutcfg
 模型定义文件
 ```
+* __Line_Model_Trian.py__
+```buildoutcfg
+车道线自动驾驶模型训练程序
+模型保存在./model_line文件夹中
+```
 ## 贡献者们  
 吴沛林  
 吴奕之  
 
 ## 问题日志
-* ~~采集数据的时候内存不够，导致程序崩溃，小车失灵~~  
+- [x] 采集数据的时候内存不够，导致程序崩溃，小车失灵。  
 解决方法:  
 使用nohup命令运行  `nohup python Collect_Data.py`
 
-参考： [Linux nohup和&的功效](https://www.cnblogs.com/laoyeye/p/9346330.html)
+    参考： [Linux nohup和&的功效](https://www.cnblogs.com/laoyeye/p/9346330.html)  
+- [ ] Line_Model_Train.py训练loss在1W多降不下来。  
+解决方法：  
+
+
 
 ## 有益改进
 ### 数据采集部分

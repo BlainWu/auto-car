@@ -45,12 +45,12 @@ avg_cost = fluid.layers.mean(cost)
 # 获取训练和测试程序
 test_program = fluid.default_main_program().clone(for_test=True)
 # 定义优化方法
-optimizer = fluid.optimizer.AdamOptimizer(learning_rate=0.01)
+optimizer = fluid.optimizer.AdamOptimizer(learning_rate=0.001)
 opts = optimizer.minimize(avg_cost)
 
 # 获取自定义数据
-train_reader = paddle.batch(reader=Data_Reader.train_reader(train_list_path, crop_size, resize_size), batch_size=32)
-test_reader = paddle.batch(reader=Data_Reader.test_reader(test_list_path, crop_size), batch_size=32)
+train_reader = paddle.batch(reader=Data_Reader.train_reader(train_list_path, crop_size, resize_size), batch_size=16)
+test_reader = paddle.batch(reader=Data_Reader.test_reader(test_list_path, crop_size), batch_size=16)
 
 # 定义执行器
 #place = fluid.CPUPlace()  #CPU训练
