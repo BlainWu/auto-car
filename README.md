@@ -79,7 +79,6 @@
 解决方法:  
 使用nohup命令运行  `nohup python Collect_Data.py`
 
-    参考： [Linux nohup和&的功效](https://www.cnblogs.com/laoyeye/p/9346330.html)  
 - [ ] Line_Model_Train.py训练loss在1W多降不下来。  
 解决方法：  
 
@@ -90,4 +89,6 @@
 >* 增加转弯角度挡位数量  
 >通过增加转弯挡位，使得角度变化更多样，深度学习训练出的模型鲁棒性更高。
 
-
+#参考资料
+- [Paddle Lite 文档](https://paddle-lite.readthedocs.io/zh/latest/introduction/tech_highlights.html)
+- [Linux nohup和&的功效](https://www.cnblogs.com/laoyeye/p/9346330.html)  
