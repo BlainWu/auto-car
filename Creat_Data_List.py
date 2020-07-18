@@ -9,56 +9,54 @@
 import os
 import argparse
 import numpy as np
+from tqdm import tqdm
 from utils import mkdir
 
-path = "./"
-
-parser = argparse.ArgumentParser()
-parser.add_argument('--test_list',dest='test_list',default="test.list",type = str)
-parser.add_argument('--train_list',dest = 'train_list',default='train.list',type = str)
-parser.add_argument('--data_name',dest='data_name',default='data.npy',type = str)
-parser.add_argument('--img_name',dest='img_name',default='hsv_img',type = str)
-args = parser.parse_args()
-
-test_list = args.test_list
-train_list = args.train_list
-data_name = args.data_name
-img_name = args.img_name
-
-def create_data_list(data_name, img_name):
+def create_data_list(data_name, img_name,train_list,test_list):
     with open(test_list, 'w') as f:
         pass
     with open(train_list, 'w') as f:
         pass
-    data = np.load(data_name)
-    data = data.astype('float32')
-    print('loading image：%s' % img_name)
+    data = np.loadtxt(data_name)
 
     class_sum = 0
 
     img_paths = os.listdir(img_name)
-    for img_path in img_paths:
-        name_path = img_name + '/' + img_path
+    for img_path in tqdm(img_paths):
+        name_path = os.path.join(img_name ,img_path).replace('\\','/')
         index = int(img_path.split('.')[0])
-
-        if not os.path.exists(data_root_path):
-            os.makedirs(data_root_path)
 
         if class_sum % 10 == 0:
             with open( test_list, 'a') as f:
-                f.write(name_path + "\t%d" % data[index] + "\n")
+                line = "{0}\t{1}\t{2}\n".format(name_path,data[index][0],data[index][1])
+                f.write(line)
         else:
             with open(train_list, 'a') as f:
-                f.write(name_path + "\t%d" % data[index] + "\n")
+                line = "{0}\t{1}\t{2}\n".format(name_path, data[index][0], data[index][1])
+                f.write(line)
         class_sum += 1
     print('图像列表已生成')
 
 if __name__ == '__main__':
-    data_root_path = os.path.join(path,'data')
-    mkdir(data_root_path)
-    test_list = os.path.join(path,'data',test_list)
-    train_list = os.path.join(path,'data',train_list)
-    data_name = os.path.join(path,'data',data_name)
-    img_name = os.path.join(path,'data',img_name)
 
-    create_data_list(data_name, img_name)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--test_list', dest='test_list', default="test.list", type=str)
+    parser.add_argument('--train_list', dest='train_list', default='train.list', type=str)
+    parser.add_argument('--data_name', dest='data_name', default='data.txt', type=str)
+    parser.add_argument('--img_name', dest='img_name', default='hsv_img', type=str)
+    parser.add_argument('--dataset_dir', dest="dataset_dir", default='./dataset', type=str)
+    args = parser.parse_args()
+
+    test_list = args.test_list
+    train_list = args.train_list
+    data_name = args.data_name
+    img_name = args.img_name
+    dataset_dir = args.dataset_dir
+
+    test_list = os.path.join(dataset_dir,test_list)
+    train_list = os.path.join(dataset_dir,train_list)
+    data_name = os.path.join(dataset_dir,data_name)
+    img_name = os.path.join(dataset_dir,img_name)
+
+    #执行
+    create_data_list(data_name, img_name,train_list,test_list)
