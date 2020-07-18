@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/Creat_Dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../复赛材料/src" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Python.Img_pre_process">
+  <component name="RunManager" selected="Python.Creat_Dataset">
     <configuration name="Collect_Data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,6 +87,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Creat_Data_List.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Creat_Dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Creat_Dataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,8 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Img_pre_process" />
+        <item itemvalue="Python.Creat_Dataset" />
         <item itemvalue="Python.learning" />
+        <item itemvalue="Python.Img_pre_process" />
         <item itemvalue="Python.Creat_Data_List" />
         <item itemvalue="Python.Collect_Data" />
       </list>
@@ -328,38 +351,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594983782109" />
-    <state width="936" height="282" key="GridCell.Tab.0.bottom" timestamp="1594827260001">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1595049980120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594827260001" />
-    <state width="936" height="282" key="GridCell.Tab.0.center" timestamp="1594827260000">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595049980120" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1595049980120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594827260000" />
-    <state width="936" height="282" key="GridCell.Tab.0.left" timestamp="1594827260000">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595049980120" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1595049980119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594827260000" />
-    <state width="936" height="282" key="GridCell.Tab.0.right" timestamp="1594827260001">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595049980119" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1595049980120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594827260001" />
-    <state width="1293" height="341" key="GridCell.Tab.1.bottom" timestamp="1594649094068">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595049980120" />
+    <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1595043339269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
-    <state width="1293" height="341" key="GridCell.Tab.1.center" timestamp="1594649094068">
+    <state width="1899" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595043339269" />
+    <state width="1899" height="344" key="GridCell.Tab.1.center" timestamp="1595043339269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="341" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
-    <state width="1293" height="341" key="GridCell.Tab.1.left" timestamp="1594649094068">
+    <state width="1899" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595043339269" />
+    <state width="1899" height="344" key="GridCell.Tab.1.left" timestamp="1595043339269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="341" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
-    <state width="1293" height="341" key="GridCell.Tab.1.right" timestamp="1594649094068">
+    <state width="1899" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595043339269" />
+    <state width="1899" height="344" key="GridCell.Tab.1.right" timestamp="1595043339269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="341" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594649094068" />
+    <state width="1899" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595043339269" />
     <state x="710" y="197" key="SettingsEditor" timestamp="1594792364911">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -380,10 +403,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594905893837" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1594982995007">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595039506152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594982995007" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595039506152" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
