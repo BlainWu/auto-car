@@ -63,7 +63,7 @@ def unite_all(origin_dir,target_dir,img_name = 'img',data_name = 'data.txt'):
                 total_data.append(buffer)
 
         else:
-            print("数据集{0}内容不匹配->图片数：{1}，数据行数：{2}".format(dataset,img_num,data_num))
+            print("\n数据集{0}内容不匹配->图片数：{1}，数据行数：{2}".format(dataset,img_num,data_num))
 
     #保存txt
     np.savetxt(os.path.join(target_dir,data_name),total_data,fmt='%d')
@@ -75,7 +75,7 @@ def unite_all(origin_dir,target_dir,img_name = 'img',data_name = 'data.txt'):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--origin_dir',dest = "origin_dir",default="./test_dataset",type=str)
+    parser.add_argument('--origin_dir',dest = "origin_dir",default="./dataset_origin",type=str)
     parser.add_argument('--target_dir',dest = "target_dir",default="./dataset",type=str)
     args = parser.parse_args()
     origin_dir = args.origin_dir
