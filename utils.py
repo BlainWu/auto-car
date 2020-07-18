@@ -8,6 +8,7 @@
 =================================================='''
 import os
 import numpy as np
+import paddle
 
 def mkdir(path):
     if not os.path.exists(path):

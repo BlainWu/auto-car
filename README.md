@@ -16,18 +16,20 @@
 ## 程序结构图  
 - 行车线检测  
 
-```
+```Markdown
 数据采集 Collect_Data.py
             ↓
 数据集整合及预处理 Creat_Dataset.py
             ↓
 训练集测试集分类 Creat_Data_List.py
+            |
+            |借助：cnn_model.py , Data_reader.py
             ↓
 训练模型Line_Model_Trian.py
 ```
 
 ## 程序说明  
-### Creat_Dataset.py  
+* __Creat_Dataset.py__  
 ```buildoutcfg
 传参：  
     --origin_dir 原始数据目录，默认"./dataset_origin"  
@@ -35,7 +37,7 @@
 功能：  
     默认搜索的子数据集名称为round{数字},进行数据校验，保存至目标文件夹内（不需要预先建文件夹，已有文件夹会被覆盖）。
 ```
-### Creat_Data_List.py
+* __Creat_Data_List.py__
 ```buildoutcfg
 传参：
     --test_list     验证集列表名称，默认‘test.list’
@@ -47,7 +49,22 @@
 功能：
     按照一定比率划分训练集和测试集，生成两个映射列表，列表结构为：{文件地址} {速度} {角度}
 ```
+* __utils.py__
+```buildoutcfg
+通用工具函数：
+    -mkdir(path)    检查是否有该文件夹，有则跳过，无则创建
+    -getvalue()     获取xbox手柄数据
+```
+* __Data_reader.py__
+```buildoutcfg
+模型训练中的数据集读取的工具函数
+```
+可参考 API：[paddle.data_reader](https://www.paddlepaddle.org.cn/documentation/docs/zh/api_cn/data_cn/data_reader_cn/Reader_cn.html)
 
+* __cnn_model.py__
+```buildoutcfg
+模型定义文件
+```
 ## 贡献者们  
 吴沛林  
 吴奕之  

@@ -12,7 +12,7 @@ import multiprocessing
 import v4l2capture
 from ctypes import *
 import struct
-from utils import *
+from utils import mkdir,getvalue
 import cv2
 import numpy as np
 import time
