@@ -67,11 +67,11 @@ def save_data_process(lock,n,data,run):
 def control_car_process(data, status, run, start):
     max_num = 2100
     min_num = 700
-    turn_ratio = 300            #转弯率
-    turn_ratio_1 = 300          #一档转弯
-    turn_ratio_2 = 290          #二档转弯
+    turn_ratio = 305            #转弯率
+    turn_ratio_1 = 305          #一档转弯
+    turn_ratio_2 = 295          #二档转弯
     turn_ratio_3 = 290          #三档转弯
-    turn_ratio_4 = 265          #四档转弯
+    turn_ratio_4 = 270          #四档转弯
     sharp_turn = 800            #急转弯率
     speed_offset = 20           #速度偏移量
     while run.value:
@@ -202,7 +202,7 @@ if __name__ == '__main__':
     |--data.npy
     '''
     parser = argparse.ArgumentParser()
-    parser.add_argument('--vels', dest='speed', default=1540, type=int)
+    parser.add_argument('--vels', dest='speed', default=1550, type=int)
     parser.add_argument('--outputs', dest='output_data', default='data', type=str)
     parser.add_argument('--serial', dest='serial', default='/dev/ttyUSB0', type=str)
     parser.add_argument('--camera', dest='camera', default='/dev/video2', type=str)
