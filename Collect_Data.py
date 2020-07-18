@@ -19,41 +19,6 @@ import time
 import argparse
 
 
-path = os.path.split(os.path.realpath(__file__))[0] + "/.."
-
-
-'''
-传参的设定，其中最终生成文件的及别
-|output_data
-|--img_dir
-|--data.npy
-'''
-parser = argparse.ArgumentParser()
-parser.add_argument('--vels',dest='speed',default=1540,type = int)
-parser.add_argument('--outputs',dest='output_data',default='data',type = str)
-parser.add_argument('--serial',dest = 'serial',default='/dev/ttyUSB0',type = str)
-parser.add_argument('--camera',dest='camera',default='/dev/video2',type = str)
-parser.add_argument('-img_dir_name',dest = 'img_dir',default='img',type=str)
-args = parser.parse_args()
-
-'''分配共享内存空间'''
-camera = multiprocessing.Array("b",range(50))#camera
-serial = multiprocessing.Array("b",range(50))#serial
-output_data = multiprocessing.Array("b",range(50))#output_data
-Speed = multiprocessing.Array("i",range(2))#speed and angle (int)
-
-'''参数的设定'''
-camera.value = args.camera
-output_data.value = args.output_data
-Speed[0]  = int(args.speed)
-Speed[1]  = 1500 #angle initialize
-serial.value = args.serial
-save_name = args.img_dir
-
-'''创建一个互斥锁，默认是没有上锁的 '''
-lock = multiprocessing.Manager().Lock()
-
-
 '''保存帧图片线程'''
 def save_image_process(lock,n,status,start,Camera):
     global path
@@ -228,6 +193,38 @@ def txt_2_numpy():
 
 
 if __name__ == '__main__':
+    path = os.path.split(os.path.realpath(__file__))[0] + "/.."
+
+    '''
+    传参的设定，其中最终生成文件的及别
+    |output_data
+    |--img_dir
+    |--data.npy
+    '''
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--vels', dest='speed', default=1540, type=int)
+    parser.add_argument('--outputs', dest='output_data', default='data', type=str)
+    parser.add_argument('--serial', dest='serial', default='/dev/ttyUSB0', type=str)
+    parser.add_argument('--camera', dest='camera', default='/dev/video2', type=str)
+    parser.add_argument('-img_dir_name', dest='img_dir', default='img', type=str)
+    args = parser.parse_args()
+
+    '''分配共享内存空间'''
+    camera = multiprocessing.Array("b", range(50))  # camera
+    serial = multiprocessing.Array("b", range(50))  # serial
+    output_data = multiprocessing.Array("b", range(50))  # output_data
+    Speed = multiprocessing.Array("i", range(2))  # speed and angle (int)
+
+    '''参数的设定'''
+    camera.value = args.camera
+    output_data.value = args.output_data
+    Speed[0] = int(args.speed)
+    Speed[1] = 1500  # angle initialize
+    serial.value = args.serial
+    save_name = args.img_dir
+
+    '''创建一个互斥锁，默认是没有上锁的 '''
+    lock = multiprocessing.Manager().Lock()
 
     Flag_save_data = multiprocessing.Value("i", False)  # New img save flag
     Status = multiprocessing.Value("i", True)  # Run or Stop for PS2

@@ -23,6 +23,7 @@
             ↓
 训练集测试集分类 Creat_Data_List.py
             ↓
+训练模型Line_Model_Trian.py
 ```
 
 ## 程序说明  
@@ -33,6 +34,18 @@
     --target_dir 生成的最终数据文件夹，默认"./dataset"
 功能：  
     默认搜索的子数据集名称为round{数字},进行数据校验，保存至目标文件夹内（不需要预先建文件夹，已有文件夹会被覆盖）。
+```
+### Creat_Data_List.py
+```buildoutcfg
+传参：
+    --test_list     验证集列表名称，默认‘test.list’
+    --train_list    训练集列表名称 ，默认'train.list'
+    --data_name     数据文件名称 ，默认‘data.txt'
+    --img_name      二值图文件夹名称，默认'hsv_img'
+    --dataset_dir   以上文件的文件夹位置，默认'./dataset'
+    --ratio         验证集占所有数据的百分比，默认20
+功能：
+    按照一定比率划分训练集和测试集，生成两个映射列表，列表结构为：{文件地址} {速度} {角度}
 ```
 
 ## 贡献者们  
