@@ -8,7 +8,7 @@
 =================================================='''
 import os
 import argparse
-import select
+import select,termios
 import v4l2capture
 from paddlelite import *
 from ctypes import *
@@ -28,10 +28,10 @@ def image_load(video):
     mask = cv2.inRange(hsv, lowerb=lower_hsv, upperb=upper_hsv)
     img = Image.fromarray(mask)
     img = img.resize((128, 128), Image.ANTIALIAS)
+
     img = np.array(img).astype(np.float32)
     img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
-    img = img.transpose((2, 0, 1))
-    img = img[(2, 1, 0), :, :] / 255.0
+    img = img / 255.0;
     img = np.expand_dims(img, axis=0)
     return img
 
@@ -55,11 +55,11 @@ def predict(predictor, image,z):
     input.resize((1, 3, 128, 128))
     z[0, 0:img.shape[1], 0:img.shape[2] + 0, 0:img.shape[3]] = img
     z = z.reshape(1, 3, 128, 128)
-    frame1 = cv2.imdecode(np.frombuffer(img, dtype=np.uint8), cv2.IMREAD_COLOR)
+
     input.set_data(z)
     predictor.run()
     out = predictor.get_output(0)
-    score = out.data()[0][0]
+    score = out.data()[0]
     print(out.data()[0])
     return score
 
@@ -94,14 +94,15 @@ if __name__ =="__main__":
 
     '''主程序'''
     try:
+        lib.send_cmd(1500, 1500)
         z = np.zeros((1, 128, 128, 3))
         while 1:
             img = image_load(video)
             z = np.zeros((1, 128, 128, 3))
             angle = predict(predictor,img,z)
-            a = int(angle)
+            a = int(angle[0]*1900+550)
             lib.send_cmd(vel, a)
-            print("angle: %d, throttle: %d" % (a, vel))
+            print("speed: %d, angle: %d" % (vel, a))
 
     except:
         print('error')

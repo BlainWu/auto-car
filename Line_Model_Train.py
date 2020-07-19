@@ -32,8 +32,8 @@ test_list_path = os.path.join(dataset_dir,test_list)
 train_list_path = os.path.join(dataset_dir,train_list)
 
 #数据尺寸设定
-crop_size = 120
-resize_size = 120
+crop_size = 128
+resize_size = 128
 image = fluid.layers.data(name='image', shape=[3, crop_size, crop_size], dtype='float32')
 label = fluid.layers.data(name='label', shape=[1], dtype='float32')
 #模型初始化

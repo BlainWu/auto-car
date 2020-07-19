@@ -12,9 +12,9 @@ import numpy as np
 def mkdir(path):
     if not os.path.exists(path):
         os.makedirs(path)
-        print("新建文件夹:{}".format(path))
+        print("Creat_dir:{}".format(path))
     else:
-        print('文件夹 {} 已存在.'.format(path))
+        print('Dir {} existed.'.format(path))
 
 '''手柄控制'''
 def getvalue():

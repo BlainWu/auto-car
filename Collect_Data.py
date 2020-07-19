@@ -18,12 +18,11 @@ import numpy as np
 import time
 import argparse
 
-
 '''保存帧图片线程'''
 def save_image_process(lock,n,status,start,Camera):
     global path
     global save_name
-
+    print("Start saving imgs! \n")
     mkdir(path+"/data")
     mkdir(path+"/data/"+save_name)
 
@@ -37,6 +36,7 @@ def save_image_process(lock,n,status,start,Camera):
     while(start.value == False):
         pass
     while status.value:#PS2 tr or tl control stop
+
         select.select((video,), (), ())
         image_data = video.read_and_queue()
         frame = cv2.imdecode(np.frombuffer(image_data, dtype=np.uint8), cv2.IMREAD_COLOR)
@@ -55,6 +55,7 @@ def save_data_process(lock,n,data,run):
     file_write = open(path+"/data/"+ output_data.value+".txt","a")
     while run.value:
         while(n.value):
+            print("NING!")
             lock.acquire()
             n.value = False
             lock.release()
@@ -67,11 +68,11 @@ def save_data_process(lock,n,data,run):
 def control_car_process(data, status, run, start):
     max_num = 2100
     min_num = 700
-    turn_ratio = 305            #转弯率
-    turn_ratio_1 = 305          #一档转弯
-    turn_ratio_2 = 295          #二档转弯
-    turn_ratio_3 = 290          #三档转弯
-    turn_ratio_4 = 270          #四档转弯
+    turn_ratio = 337            #转弯率
+    turn_ratio_1 = 337          #一档转弯
+    turn_ratio_2 = 335          #二档转弯
+    turn_ratio_3 = 305          #三档转弯
+    turn_ratio_4 = 298          #四档转弯
     sharp_turn = 800            #急转弯率
     speed_offset = 20           #速度偏移量
     while run.value:
@@ -180,21 +181,9 @@ def control_car_process(data, status, run, start):
             lib.send_cmd(1500, 1500)
             print("car run finally")
 
-def txt_2_numpy():
-    angledata = []
-    data = []
-    file = open(path+"/data/"+ output_data.value+".txt","r")
-    for line in file.readlines():
-        line = line.strip('\n')
-        angledata.append(int(line))
-    angle = np.array(angledata)
-    np.save(path+"/data/"+ output_data.value+".npy", angle,False)
-    file.close()
-
 
 if __name__ == '__main__':
     path = os.path.split(os.path.realpath(__file__))[0] + "/.."
-
     '''
     传参的设定，其中最终生成文件的及别
     |output_data
@@ -206,7 +195,7 @@ if __name__ == '__main__':
     parser.add_argument('--outputs', dest='output_data', default='data', type=str)
     parser.add_argument('--serial', dest='serial', default='/dev/ttyUSB0', type=str)
     parser.add_argument('--camera', dest='camera', default='/dev/video2', type=str)
-    parser.add_argument('-img_dir_name', dest='img_dir', default='img', type=str)
+    parser.add_argument('--img_dir_name', dest='img_dir', default='img', type=str)
     args = parser.parse_args()
 
     '''分配共享内存空间'''
@@ -232,12 +221,9 @@ if __name__ == '__main__':
     RUN = multiprocessing.Value("i", True)  # SHUTDOWN
 
     try:
-        process_car = multiprocessing.Process(target=control_car_process,
-                                              args=(Speed, Status, RUN, START))
-        process_image = multiprocessing.Process(target=save_image_process,
-                                                args=(lock, Flag_save_data, Status, START, camera,))
-        process_data = multiprocessing.Process(target=save_data_process,
-                                               args=(lock, Flag_save_data, Speed, RUN,))
+        process_car = multiprocessing.Process(target=control_car_process,args=(Speed, Status, RUN, START))
+        process_image = multiprocessing.Process(target=save_image_process,args=(lock, Flag_save_data, Status, START, camera,))
+        process_data = multiprocessing.Process(target=save_data_process,args=(lock, Flag_save_data, Speed, RUN,))
         process_car.start()
         process_image.start()
         process_data.start()
@@ -247,8 +233,6 @@ if __name__ == '__main__':
                 time.sleep(1)
                 RUN.value = False
                 print("STOP CAR")
-                print("TXT to npy")
-                #txt_2_numpy()
                 break
     except:
         RUN.value = False
