@@ -8,7 +8,7 @@
 =================================================='''
 import os
 import argparse
-import select,termios
+import select
 import v4l2capture
 from paddlelite import *
 from ctypes import *
@@ -66,7 +66,7 @@ def predict(predictor, image,z):
 if __name__ =="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_dir',dest = "model_dir",default='../model_line',type=str)
-    parser.add_argument('--speed',dest='speed',default=1540,type=int)
+    parser.add_argument('--speed',dest='speed',default=1560,type=int)
     parser.add_argument('--camera',dest='camera',default="/dev/video2",type=str)
 
     args = parser.parse_args()
@@ -94,13 +94,22 @@ if __name__ =="__main__":
 
     '''主程序'''
     try:
+        if (lib.art_racecar_init(38400, car.encode("utf-8")) < 0):
+            raise
+            pass
         lib.send_cmd(1500, 1500)
         z = np.zeros((1, 128, 128, 3))
         while 1:
             img = image_load(video)
             z = np.zeros((1, 128, 128, 3))
             angle = predict(predictor,img,z)
+            a_shift = angle - 1500
+            if a_shift >0 :
+            	angle = 1500 + 1.5*a_shift
+            else:
+           	    angle = 1500 + 1.7*a_shift
             a = int(angle[0]*1900+550)
+            a = int(angle)
             lib.send_cmd(vel, a)
             print("speed: %d, angle: %d" % (vel, a))
 
