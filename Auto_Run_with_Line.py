@@ -45,6 +45,7 @@ def load_model(model_dir):
     config.set_model_file(model_dir + "/model")
     config.set_param_file(model_dir + "/params")
     config.set_valid_places(valid_places)
+
     predictor = CreatePaddlePredictor(config)
     return predictor
 
