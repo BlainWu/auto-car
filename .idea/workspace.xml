@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto_Run_with_Line.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auto_Run_with_Line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Line_Model_Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Line_Model_Train.py" afterDir="false" />
-    </list>
+    <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -436,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595417108636</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="update">
+      <created>1595418737893</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1595418737893</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -518,14 +521,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1304" y="224" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595063270046" />
-    <state x="710" y="197" key="SettingsEditor" timestamp="1595069703913">
+    <state x="710" y="197" key="SettingsEditor" timestamp="1595418856190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595069703913" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595417134277">
+    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595418856190" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595418774545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595417134277" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595418774545" />
     <state x="1053" y="100" width="774" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595064562928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
