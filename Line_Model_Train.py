@@ -40,7 +40,7 @@ label = fluid.layers.data(name='label', shape=[1], dtype='float32')
 #模型初始化
 model = cnn_model.cnn_model(image,speed)#增加速度因素
 #loss设定
-cost = fluid.layers.square_error_cost(input=(model,speed), label=label)
+cost = fluid.layers.square_error_cost(input=model, label=label)
 avg_cost = fluid.layers.mean(cost)
 
 # 获取训练和测试程序

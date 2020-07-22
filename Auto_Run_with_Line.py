@@ -49,16 +49,15 @@ def load_model(model_dir):
     predictor = CreatePaddlePredictor(config)
     return predictor
 
-def predict(predictor, image,z):
+def predict(predictor, image,vel,z):
     img = image
-
     input = predictor.get_input(0)
     input.resize((1, 3, 128, 128))
     z[0, 0:img.shape[1], 0:img.shape[2] + 0, 0:img.shape[3]] = img
     z = z.reshape(1, 3, 128, 128)
-
-    input.set_data(z)
+    input.set_data(z,vel)
     predictor.run()
+
     out = predictor.get_output(0)
     score = out.data()[0]
     print(out.data()[0])
@@ -103,13 +102,12 @@ if __name__ =="__main__":
         while 1:
             img = image_load(video)
             z = np.zeros((1, 128, 128, 3))
-            angle = predict(predictor,img,z)
+            angle = predict(predictor,img,vel,z)
             a_shift = angle - 1500
-            if a_shift >0 :
-            	angle = 1500 + 1.5*a_shift
-            else:
-           	    angle = 1500 + 1.7*a_shift
-            a = int(angle[0]*1900+550)
+            #if a_shift >0 :
+            #	angle = 1500 + 1.5*a_shift
+            #else:
+           	#    angle = 1500 + 1.7*a_shift
             a = int(angle)
             lib.send_cmd(vel, a)
             print("speed: %d, angle: %d" % (vel, a))
