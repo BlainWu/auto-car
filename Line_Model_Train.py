@@ -35,11 +35,12 @@ train_list_path = os.path.join(dataset_dir,train_list)
 crop_size = 128
 resize_size = 128
 image = fluid.layers.data(name='image', shape=[3, crop_size, crop_size], dtype='float32')
+speed = fluid.layers.data(name='speed', shape=[1], dtype='float32')#增加速度因素
 label = fluid.layers.data(name='label', shape=[1], dtype='float32')
 #模型初始化
-model = cnn_model.cnn_model(image)
+model = cnn_model.cnn_model(image,speed)#增加速度因素
 #loss设定
-cost = fluid.layers.square_error_cost(input=model, label=label)
+cost = fluid.layers.square_error_cost(input=(model,speed), label=label)
 avg_cost = fluid.layers.mean(cost)
 
 # 获取训练和测试程序
@@ -61,7 +62,7 @@ exe = fluid.Executor(place)
 exe.run(fluid.default_startup_program())
 
 # 定义输入数据维度
-feeder = fluid.DataFeeder(place=place, feed_list=[image, label])
+feeder = fluid.DataFeeder(place=place, feed_list=[image,speed,label])
 
 # 训练
 all_test_cost = []

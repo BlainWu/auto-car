@@ -1,6 +1,6 @@
 import paddle.fluid as fluid
 
-def cnn_model(image):
+def cnn_model(image,speed):
     conv1 = fluid.layers.conv2d(input=image, num_filters=24, filter_size=5, stride=2, act='relu')
     conv2 = fluid.layers.conv2d(input=conv1, num_filters=32, filter_size=5, stride=2, act='relu')
     conv3 = fluid.layers.conv2d(input=conv2, num_filters=64, filter_size=5, stride=2, act='relu')
@@ -10,7 +10,9 @@ def cnn_model(image):
     drop_fc1 = fluid.layers.dropout(fc1, dropout_prob=0.1)
     fc2 = fluid.layers.fc(input=drop_fc1, size=50, act=None)
     drop_fc2 = fluid.layers.dropout(fc2, dropout_prob=0.1)
-    predict = fluid.layers.fc(input=drop_fc2, size=1, act=None)
+    #当前速度加入
+    before_predict = fluid.layers.fc(input=[drop_fc2,speed], size=2, act=None)
+    predict = fluid.layers.fc(input = before_predict,size = 1 ,act = None)
     return predict
 
 
