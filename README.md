@@ -87,6 +87,13 @@
 - [x] Line_Model_Train.py训练loss在1W多降不下来。  
 解决方法： 标签为整数，使用方差计算累加以后所以很大。 
 
+- [ ] 加载新训练模型报错： 
+    > predictor = CreatePaddlePredictor(config)  
+    ValueError: unmatched type, store as -746832279, but want to get N6paddle4lite10TensorLiteE 
+
+    解决方法:
+
+
 
 ## 有益改进
 ### 数据采集部分
