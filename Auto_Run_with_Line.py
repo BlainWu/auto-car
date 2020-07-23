@@ -39,9 +39,10 @@ def load_model(model_dir):
     valid_places = (
         Place(TargetType.kFPGA, PrecisionType.kFP16, DataLayoutType.kNHWC),
         Place(TargetType.kHost, PrecisionType.kFloat),
-        Place(TargetType.kARM, PrecisionType.kFloat),
+        Place(TargetType.kARM, PrecisionType.kFloat)
     )
     config = CxxConfig()
+    #config.set_model_dir(model_dir + "/final_model.nb")
     config.set_model_file(model_dir + "/model")
     config.set_param_file(model_dir + "/params")
     config.set_valid_places(valid_places)
@@ -49,15 +50,28 @@ def load_model(model_dir):
     predictor = CreatePaddlePredictor(config)
     return predictor
 
-def predict(predictor, image,vel,z):
-    img = image
-    input = predictor.get_input(0)
-    input.resize((1, 3, 128, 128))
-    z[0, 0:img.shape[1], 0:img.shape[2] + 0, 0:img.shape[3]] = img
-    z = z.reshape(1, 3, 128, 128)
-    input.set_data(z,vel)
-    predictor.run()
+def predict(predictor, image,vel):
+    img = image#输入图像数据
+    img = img.reshape(1, 3, 128, 128)
+    speed = []
+    speed.append(vel)
+    print(img)
+    print("\n\n\n")
+    print(speed)
+    input_img = predictor.get_input(0)#接口参数名称0
+    input_speed = predictor.get_input(1)#设置接口参数名称1
+    input_img.resize((1, 3, 128, 128))#设置接口图像大小
 
+    print("\n\n\n 1 \n\n\n")
+    print("\n\n\n 2 \n\n\n")
+    print("\n\n\n 3 \n\n\n")
+    print("\n\n\n 4 \n\n\n")
+    input_img.set_data(img)
+    print("\n\n\n 5 \n\n\n")
+    input_speed.set_data(speed)
+    print("\n\n\n 6 \n\n\n")
+    predictor.run()
+    ##-------------------------------------------##
     out = predictor.get_output(0)
     score = out.data()[0]
     print(out.data()[0])
@@ -94,15 +108,10 @@ if __name__ =="__main__":
 
     '''主程序'''
     try:
-        if (lib.art_racecar_init(38400, car.encode("utf-8")) < 0):
-            raise
-            pass
         lib.send_cmd(1500, 1500)
-        z = np.zeros((1, 128, 128, 3))
         while 1:
             img = image_load(video)
-            z = np.zeros((1, 128, 128, 3))
-            angle = predict(predictor,img,vel,z)
+            angle = predict(predictor,img,vel)
             a_shift = angle - 1500
             #if a_shift >0 :
             #	angle = 1500 + 1.5*a_shift

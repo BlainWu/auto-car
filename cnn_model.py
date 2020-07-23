@@ -11,7 +11,9 @@ def cnn_model(image,speed):
     fc2 = fluid.layers.fc(input=drop_fc1, size=50, act=None)
     drop_fc2 = fluid.layers.dropout(fc2, dropout_prob=0.1)
     #当前速度加入
-    before_predict = fluid.layers.fc(input=[drop_fc2,speed], size=2, act=None)
+    speed = fluid.layers.fill_constant(shape=[1], value=speed, dtype='int64')
+    concat = fluid.layers.concat(input = [drop_fc2,speed],axis = -1)
+    before_predict = fluid.layers.fc(input=concat, size=2, act=None)
     predict = fluid.layers.fc(input = before_predict,size = 1 ,act = None)
     return predict
 

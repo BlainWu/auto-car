@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update" />
+    <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/model_line/final_model.nb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_line/model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_line/params" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto_Run_with_Line.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auto_Run_with_Line.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opt_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt_tools.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,48 +42,56 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/2.0" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ed9MuTIiwgY13dPdO6x79E8y4q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="R:\智能车\codes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.learning">
-    <configuration name="Collect_Data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="codes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Collect_Data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.opt_tools">
     <configuration name="Creat_Data_List" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Img_pre_process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="cnn_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,7 +146,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Img_pre_process.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnn_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,18 +176,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="opt_tools" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opt_tools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.opt_tools" />
+        <item itemvalue="Python.cnn_model" />
         <item itemvalue="Python.learning" />
         <item itemvalue="Python.Creat_Dataset" />
         <item itemvalue="Python.Creat_Data_List" />
-        <item itemvalue="Python.Img_pre_process" />
-        <item itemvalue="Python.Collect_Data" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\peilin\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -439,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595418737893</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="update">
+      <created>1595419096742</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1595419096742</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -465,6 +510,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
@@ -477,30 +523,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="972" y="337" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595240286457" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1595129404813">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1595418877903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595129404813" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595418877903" />
     <state x="1219" y="264" key="FileChooserDialogImpl" timestamp="1594983782109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594983782109" />
-    <state width="1899" height="259" key="GridCell.Tab.0.bottom" timestamp="1595248288382">
+    <state width="780" height="141" key="GridCell.Tab.0.bottom" timestamp="1595422082043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595248288382" />
-    <state width="1899" height="259" key="GridCell.Tab.0.center" timestamp="1595248288382">
+    <state width="780" height="141" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
+    <state width="780" height="141" key="GridCell.Tab.0.center" timestamp="1595422082043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595248288382" />
-    <state width="1899" height="259" key="GridCell.Tab.0.left" timestamp="1595248288382">
+    <state width="780" height="141" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
+    <state width="780" height="141" key="GridCell.Tab.0.left" timestamp="1595422082043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595248288382" />
-    <state width="1899" height="259" key="GridCell.Tab.0.right" timestamp="1595248288382">
+    <state width="780" height="141" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
+    <state width="780" height="141" key="GridCell.Tab.0.right" timestamp="1595422082043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595248288382" />
+    <state width="780" height="141" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
     <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1595069379885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -521,14 +567,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1304" y="224" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595063270046" />
-    <state x="710" y="197" key="SettingsEditor" timestamp="1595418856190">
+    <state x="710" y="197" key="SettingsEditor" timestamp="1595418909829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595418856190" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595418774545">
+    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595418909829" />
+    <state x="1185" y="226" key="VCS.ChangeListViewerDialog" timestamp="1595480833487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595418774545" />
+    <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595480779928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595480779928" />
     <state x="1053" y="100" width="774" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595064562928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -545,6 +595,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594905893837" />
+    <state x="1233" y="383" key="git4idea.rebase.GitRebaseDialog" timestamp="1595480835317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1233" y="383" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480835317" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595056650799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
