@@ -11,11 +11,12 @@ from paddlelite.lite import *
 # 1. 创建opt实例
 opt=Opt()
 # 2. 指定输入模型地址
-model_file = './model_line/models'
+model_file = './model_line/model'
 param_file = './model_line/params'
 opt.set_model_file(model_file)
 opt.set_param_file(param_file)
 # 3. 指定转化类型： arm、x86、opencl、xpu、npu
+opt.set_model_dir("./model_line")
 opt.set_valid_places('arm')
 # 4. 指定模型转化类型： naive_buffer、protobuf
 opt.set_model_type("naive_buffer")

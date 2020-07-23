@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/model_line/final_model.nb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_line/model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_line/params" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto_Run_with_Line.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auto_Run_with_Line.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnn_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_line/final_model.nb" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/final_model.nb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_line/model" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_line/params" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/params" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opt_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +67,11 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ed9MuTIiwgY13dPdO6x79E8y4q" />
@@ -84,7 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -484,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595419096742</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update">
+      <created>1595481103093</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1595481103093</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -519,10 +530,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594643593530" />
-    <state x="972" y="337" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595240286457">
+    <state x="972" y="337" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595484363773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="972" y="337" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595240286457" />
+    <state x="972" y="337" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595484363773" />
+    <state x="1172" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595482087701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1172" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595482087701" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1595418877903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -531,22 +546,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594983782109" />
-    <state width="780" height="141" key="GridCell.Tab.0.bottom" timestamp="1595422082043">
+    <state width="797" height="570" key="GridCell.Tab.0.bottom" timestamp="1595483370751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="780" height="141" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
-    <state width="780" height="141" key="GridCell.Tab.0.center" timestamp="1595422082043">
+    <state width="797" height="570" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370751" />
+    <state width="797" height="570" key="GridCell.Tab.0.center" timestamp="1595483370750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="780" height="141" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
-    <state width="780" height="141" key="GridCell.Tab.0.left" timestamp="1595422082043">
+    <state width="797" height="570" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370750" />
+    <state width="797" height="570" key="GridCell.Tab.0.left" timestamp="1595483370750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="780" height="141" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
-    <state width="780" height="141" key="GridCell.Tab.0.right" timestamp="1595422082043">
+    <state width="797" height="570" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370750" />
+    <state width="797" height="570" key="GridCell.Tab.0.right" timestamp="1595483370751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="780" height="141" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595422082043" />
+    <state width="797" height="570" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370751" />
     <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1595069379885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -567,18 +582,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1304" y="224" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595063270046" />
-    <state x="710" y="197" key="SettingsEditor" timestamp="1595418909829">
+    <state x="710" y="197" key="SettingsEditor" timestamp="1595484346506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595418909829" />
+    <state x="710" y="197" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595484346506" />
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog" timestamp="1595480833487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595480779928">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595481315684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595480779928" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595481315684" />
     <state x="1053" y="100" width="774" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595064562928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -591,18 +606,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1594912755595" />
-    <state x="672" y="306" key="git4idea.merge.GitPullDialog" timestamp="1594905893837">
+    <state x="944" y="261" key="git4idea.merge.GitPullDialog" timestamp="1595481085260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="672" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594905893837" />
+    <state x="944" y="261" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595481085260" />
     <state x="1233" y="383" key="git4idea.rebase.GitRebaseDialog" timestamp="1595480835317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1233" y="383" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480835317" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595056650799">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595486169959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595056650799" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595486169959" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -75,7 +75,7 @@
 ## 工作列表
 - [x] 输入图像->车道线指引行走
 - [x] 输入图像+速度->车道线指引
-- [ ] 标志物检测
+- [x] 标志物检测
 - [ ] 车道线指引+标志物检测运行
 - [ ] 附加项目
 
@@ -92,8 +92,11 @@
     ValueError: unmatched type, store as -746832279, but want to get N6paddle4lite10TensorLiteE 
 
     解决方法:网络结构使用了sum方法，paddle可以直接[]sum，但是paddlelite没有内置此ops。因此改为concat相加以后就好了。
+- [ ] 运行多输入模型报错：
+    >predictor.run()  
+    报错：Segmentation fault  
 
-
+    解决方法：
 
 ## 有益改进
 ### 数据采集部分

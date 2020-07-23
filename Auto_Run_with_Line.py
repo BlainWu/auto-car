@@ -42,7 +42,7 @@ def load_model(model_dir):
         Place(TargetType.kARM, PrecisionType.kFloat)
     )
     config = CxxConfig()
-    #config.set_model_dir(model_dir + "/final_model.nb")
+    #config.set_model_from_file(model_dir + "/final_model.nb")
     config.set_model_file(model_dir + "/model")
     config.set_param_file(model_dir + "/params")
     config.set_valid_places(valid_places)
@@ -55,23 +55,17 @@ def predict(predictor, image,vel):
     img = img.reshape(1, 3, 128, 128)
     speed = []
     speed.append(vel)
-    print(img)
-    print("\n\n\n")
-    print(speed)
     input_img = predictor.get_input(0)#接口参数名称0
     input_speed = predictor.get_input(1)#设置接口参数名称1
     input_img.resize((1, 3, 128, 128))#设置接口图像大小
 
-    print("\n\n\n 1 \n\n\n")
-    print("\n\n\n 2 \n\n\n")
-    print("\n\n\n 3 \n\n\n")
-    print("\n\n\n 4 \n\n\n")
     input_img.set_data(img)
-    print("\n\n\n 5 \n\n\n")
+
     input_speed.set_data(speed)
-    print("\n\n\n 6 \n\n\n")
+    print("\n\n\n 1 \n\n\n")
+
     predictor.run()
-    ##-------------------------------------------##
+    print("\n\n\n 2 \n\n\n")
     out = predictor.get_output(0)
     score = out.data()[0]
     print(out.data()[0])
