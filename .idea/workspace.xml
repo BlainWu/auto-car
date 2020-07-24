@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto_Run_with_Line.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auto_Run_with_Line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Line_Model_Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Line_Model_Train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_line/final_model.nb" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/final_model.nb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_line/model" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/model" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_line/params" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/params" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,7 @@
       <recent name="R:\智能车\codes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.opt_tools">
+  <component name="RunManager" selected="Python.learning">
     <configuration name="Creat_Data_List" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,9 +205,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.learning" />
         <item itemvalue="Python.opt_tools" />
         <item itemvalue="Python.cnn_model" />
-        <item itemvalue="Python.learning" />
         <item itemvalue="Python.Creat_Dataset" />
         <item itemvalue="Python.Creat_Data_List" />
       </list>
@@ -495,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595481103093</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="update">
+      <created>1595486257568</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1595486257568</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -546,22 +555,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594983782109" />
-    <state width="797" height="570" key="GridCell.Tab.0.bottom" timestamp="1595483370751">
+    <state width="780" height="247" key="GridCell.Tab.0.bottom" timestamp="1595510515289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="797" height="570" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370751" />
-    <state width="797" height="570" key="GridCell.Tab.0.center" timestamp="1595483370750">
+    <state width="780" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595510515289" />
+    <state width="780" height="247" key="GridCell.Tab.0.center" timestamp="1595510515289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="797" height="570" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370750" />
-    <state width="797" height="570" key="GridCell.Tab.0.left" timestamp="1595483370750">
+    <state width="780" height="247" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595510515289" />
+    <state width="780" height="247" key="GridCell.Tab.0.left" timestamp="1595510515289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="797" height="570" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370750" />
-    <state width="797" height="570" key="GridCell.Tab.0.right" timestamp="1595483370751">
+    <state width="780" height="247" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595510515289" />
+    <state width="780" height="247" key="GridCell.Tab.0.right" timestamp="1595510515289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="797" height="570" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595483370751" />
+    <state width="780" height="247" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595510515289" />
     <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1595069379885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -590,14 +599,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595481315684">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595486276699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595481315684" />
-    <state x="1053" y="100" width="774" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595064562928">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595486276699" />
+    <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595492305475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1053" y="100" width="774" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595064562928" />
+    <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595492305475" />
     <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594641687576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -628,14 +637,14 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Line_Model_Train.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils.py</url>
           <line>11</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Auto_Run_with_Line.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

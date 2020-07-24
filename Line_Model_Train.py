@@ -12,7 +12,9 @@ import paddle
 import paddle.fluid as fluid
 import cnn_model
 import Data_Reader
-
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--save_path',dest="save_path",default="./model_line")
@@ -35,7 +37,7 @@ train_list_path = os.path.join(dataset_dir,train_list)
 crop_size = 128
 resize_size = 128
 image = fluid.layers.data(name='image', shape=[3, crop_size, crop_size], dtype='float32')
-speed = fluid.layers.data(name='speed', shape=[1], dtype='float32')#增加速度因素
+speed = fluid.layers.data(name='speed', shape=[25], dtype='float32')#增加速度因素
 label = fluid.layers.data(name='label', shape=[1], dtype='float32')
 #模型初始化
 model = cnn_model.cnn_model(image,speed)#增加速度因素
@@ -88,12 +90,13 @@ for pass_id in range(iters):
     # 求测试结果的平均值
     test_cost = (sum(test_costs) / len(test_costs))
     all_test_cost.append(test_cost)
-
+    plt.plot(all_test_cost,marker = 'o') #画图
+    plt.savefig('./Loss.jpg')
     print('Test:%d, Cost:%0.5f' % (pass_id, test_cost))
 
     # 保存预测模型
     if min(all_test_cost) >= test_cost:
         fluid.io.save_inference_model(save_path, feeded_var_names=[image.name],
                                       main_program=test_program, target_vars=[model],
-                                      executor=exe,params_filename='params',model_filename='models')
+                                      executor=exe,params_filename='params',model_filename='model')
         print('Lowest test_cost: {}'.format(test_cost))
