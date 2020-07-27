@@ -21,6 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
       <change afterPath="$PROJECT_DIR$/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/双输入模型版本/Auto_Run_with_Line.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/双输入模型版本/Data_Reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/双输入模型版本/Line_Model_Train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/双输入模型版本/cnn_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/双输入模型版本/model_line/model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/双输入模型版本/model_line/params" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/拼接后在模型中分开再全连接/Auto_Run_with_Line.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/拼接后在模型中分开再全连接/Data_Reader.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/拼接后在模型中分开再全连接/Line_Model_Train.py" afterDir="false" />
@@ -31,14 +37,7 @@
       <change afterPath="$PROJECT_DIR$/直接带入卷积版本/Line_Model_Train.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/直接带入卷积版本/cnn_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto_Run_with_Line.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auto_Run_with_Line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Line_Model_Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Line_Model_Train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnn_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_line/final_model.nb" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/final_model.nb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_line/model" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_line/params" beforeDir="false" afterPath="$PROJECT_DIR$/model_line/params" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -521,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595554452146</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update">
+      <created>1595662787681</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1595662787681</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -616,18 +622,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595554458249">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595662796165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595554458249" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595662796165" />
     <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595577020168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595577020168" />
-    <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594641687576">
+    <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595673602630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594641687576" />
+    <state x="1234" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595673602630" />
     <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1594912755595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
