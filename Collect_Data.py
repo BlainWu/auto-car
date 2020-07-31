@@ -42,9 +42,9 @@ def save_image_process(lock,n,status,start,Camera):
         frame = cv2.imdecode(np.frombuffer(image_data, dtype=np.uint8), cv2.IMREAD_COLOR)
         cv2.imwrite(path+"/data/"+save_name+"/{}.jpg".format(imgInd), frame)
         print("imgInd=",imgInd)
-        lock.acquire()
+        lock.acquire() #互斥锁启动
         n.value = True
-        lock.release()
+        lock.release() #互斥锁释放
         imgInd+=1
         key = cv2.waitKey(1)
         if key & 0xFF == ord('q'):
@@ -55,7 +55,6 @@ def save_data_process(lock,n,data,run):
     file_write = open(path+"/data/"+ output_data.value+".txt","a")
     while run.value:
         while(n.value):
-            print("NING!")
             lock.acquire()
             n.value = False
             lock.release()
@@ -123,12 +122,6 @@ def control_car_process(data, status, run, start):
                             if (button == "x" and button_states[button] == True):
                                 turn_ratio = turn_ratio_3
                             # 切换四档转向
-                            if (button == "y" and button_states[button] == True):
-                                turn_ratio = turn_ratio_4
-                            # 速度增加
-                            if (button == "y" and button_states[button] == True):
-                                turn_ratio = turn_ratio_4
-                            # 速度减小
                             if (button == "y" and button_states[button] == True):
                                 turn_ratio = turn_ratio_4
 
@@ -205,14 +198,6 @@ if __name__ == '__main__':
     output_data = multiprocessing.Array("b", range(50))  # output_data
     Speed = multiprocessing.Array("i", range(2))  # speed and angle (int)
 
-    '''参数的设定'''
-    camera.value = args.camera
-    output_data.value = args.output_data
-    Speed[0] = int(args.speed)
-    Speed[1] = 1500  # angle initialize
-    serial.value = args.serial
-    save_name = args.img_dir
-
     '''创建一个互斥锁，默认是没有上锁的 '''
     lock = multiprocessing.Manager().Lock()
 
@@ -220,6 +205,14 @@ if __name__ == '__main__':
     Status = multiprocessing.Value("i", True)  # Run or Stop for PS2
     START = multiprocessing.Value("i", False)  # START
     RUN = multiprocessing.Value("i", True)  # SHUTDOWN
+
+    '''参数的初始化'''
+    camera.value = args.camera
+    output_data.value = args.output_data
+    Speed[0] = int(args.speed)
+    Speed[1] = 1500  # angle initialize
+    serial.value = args.serial
+    save_name = args.img_dir
 
     try:
         process_car = multiprocessing.Process(target=control_car_process,args=(Speed, Status, RUN, START))

@@ -60,22 +60,12 @@ def predict(predictor, image, vel):
     speed = [[float(vel)] * 25] #转为（1，10）尺寸
     speed = np.array(speed)     #list转为arrary
     speed = speed.reshape(1,1,25)
-    print(speed)
-    print("\n\n\n 1 \n\n\n")
     input_img = predictor.get_input(0)  # 接口参数名称0
-    print("\n\n\n 2 \n\n\n")
     input_img.resize((1, 3, 128, 128))  # 设置接口图像大小
-    print("\n\n\n 3 \n\n\n")
     input_speed = predictor.get_input(1)  # 设置接口参数名称1
-    print("\n\n\n 4 \n\n\n")
     input_speed.resize((1,1,25))
-    print("\n\n\n 5 \n\n\n")
-    print("\n\n\n 6 \n\n\n")
     input_img.set_data(input_img)
     input_speed.set_data(speed_list)
-    print(np.shape(img))
-    print(np.shape(speed))
-    print("\n\n\n 9 \n\n\n")
     predictor.run()
 
     out = predictor.get_output(0)
