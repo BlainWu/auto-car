@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto_Run_with_Line.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auto_Run_with_Line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collect_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collect_Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Follow_Me.py" beforeDir="false" afterPath="$PROJECT_DIR$/Follow_Me.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -540,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596023031970</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="update">
+      <created>1596178057782</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1596178057782</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -587,10 +595,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595418877903" />
-    <state x="1219" y="264" key="FileChooserDialogImpl" timestamp="1594983782109">
+    <state x="1219" y="264" key="FileChooserDialogImpl" timestamp="1596183051551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594983782109" />
+    <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596183051551" />
     <state width="1578" height="236" key="GridCell.Tab.0.bottom" timestamp="1595822684695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -635,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1596023034432">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1596178089278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596023034432" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596178089278" />
     <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595577020168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -659,10 +667,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1233" y="383" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480835317" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595590973911">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596178178292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595590973911" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596178178292" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

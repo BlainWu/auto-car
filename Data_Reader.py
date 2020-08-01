@@ -23,12 +23,10 @@ def train_mapper(sample):
         img = Image.open(img_path)
         # 统一图片大小
         img = img.resize((resize_size, resize_size), Image.ANTIALIAS)
-
         # 把图片转换成numpy值
         img = np.array(img).astype(np.float32)
         img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
         # 转换成CHW
-
         img = img.transpose((2, 0, 1))
         # 转换成BGR
         img = img[(2, 1, 0), :, :] / 255.0
@@ -36,7 +34,6 @@ def train_mapper(sample):
         return img, speed, label
     except:
         print("%s 该图片错误，请删除该图片并重新创建图像数据列表" % img_path)
-
 
 # 获取训练的reader
 def train_reader(train_list_path, crop_size, resize_size):
