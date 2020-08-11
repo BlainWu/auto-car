@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObstacleAvoidance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APF-demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FollowGreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/FollowGreen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,28 @@
       <recent name="R:\智能车\codes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ObstacleAvoidance">
+  <component name="RunManager" selected="Python.APF-demo">
+    <configuration name="APF-demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/APF-demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Auto_Run_with_Line" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,27 +153,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ObstacleAvoidance.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cnn_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="codes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnn_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.APF-demo" />
         <item itemvalue="Python.ObstacleAvoidance" />
         <item itemvalue="Python.learning" />
         <item itemvalue="Python.opt_tools" />
         <item itemvalue="Python.Auto_Run_with_Line" />
-        <item itemvalue="Python.cnn_model" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594640557864</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update">
-      <created>1594641421112</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1594641421112</updated>
     </task>
     <task id="LOCAL-00003" summary="update">
       <created>1594642149971</created>
@@ -571,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597128924683</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update">
+      <created>1597140399250</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1597140399250</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -622,22 +618,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597129700800" />
-    <state width="936" height="235" key="GridCell.Tab.0.bottom" timestamp="1597135834980">
+    <state width="1899" height="235" key="GridCell.Tab.0.bottom" timestamp="1597149421650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597135834980" />
-    <state width="936" height="235" key="GridCell.Tab.0.center" timestamp="1597135834979">
+    <state width="1899" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
+    <state width="1899" height="235" key="GridCell.Tab.0.center" timestamp="1597149421650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597135834979" />
-    <state width="936" height="235" key="GridCell.Tab.0.left" timestamp="1597135834979">
+    <state width="1899" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
+    <state width="1899" height="235" key="GridCell.Tab.0.left" timestamp="1597149421650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597135834979" />
-    <state width="936" height="235" key="GridCell.Tab.0.right" timestamp="1597135834979">
+    <state width="1899" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
+    <state width="1899" height="235" key="GridCell.Tab.0.right" timestamp="1597149421650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597135834979" />
+    <state width="1899" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
     <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1595069379885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -666,10 +662,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597128929963">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597140453441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597128929963" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597140453441" />
     <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595577020168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
