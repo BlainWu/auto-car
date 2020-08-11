@@ -45,11 +45,6 @@ if __name__=='__main__':
     car = "/dev/ttyUSB0"
     lib.art_racecar_init(38400, car.encode("utf-8"))
     lib.send_cmd(1500, 1500)
-
-    time.sleep(9)
-    frame = image_load(video)
-    time.sleep(1)
-
     while 1:
         frame=image_load(video)
         x,s=find_center(frame)
