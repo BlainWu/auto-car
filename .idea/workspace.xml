@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/APF-demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APF-demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/path_planning_demo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
           <entry type="REMOTE">
             <value>
               <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/2.0" />
+                <branch-info repo="$PROJECT_DIR$" source="origin/final" />
               </list>
             </value>
           </entry>
@@ -97,28 +97,7 @@
       <recent name="R:\智能车\codes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.APF-demo">
-    <configuration name="APF-demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="codes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/APF-demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.path_planning_demo">
     <configuration name="Auto_Run_with_Line" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,9 +182,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="path_planning_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="R:\智能车\codes\path_planning_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.APF-demo" />
+        <item itemvalue="Python.path_planning_demo" />
         <item itemvalue="Python.ObstacleAvoidance" />
         <item itemvalue="Python.learning" />
         <item itemvalue="Python.opt_tools" />
@@ -223,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594640557864</updated>
-    </task>
-    <task id="LOCAL-00003" summary="update">
-      <created>1594642149971</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1594642149971</updated>
     </task>
     <task id="LOCAL-00004" summary="update">
       <created>1594784040517</created>
@@ -567,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597140399250</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update">
+      <created>1597149596961</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1597149596962</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -618,22 +618,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597129700800" />
-    <state width="1899" height="235" key="GridCell.Tab.0.bottom" timestamp="1597149421650">
+    <state width="936" height="129" key="GridCell.Tab.0.bottom" timestamp="1597203774567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
-    <state width="1899" height="235" key="GridCell.Tab.0.center" timestamp="1597149421650">
+    <state width="936" height="129" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
+    <state width="936" height="129" key="GridCell.Tab.0.center" timestamp="1597203774567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
-    <state width="1899" height="235" key="GridCell.Tab.0.left" timestamp="1597149421650">
+    <state width="936" height="129" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
+    <state width="936" height="129" key="GridCell.Tab.0.left" timestamp="1597203774567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
-    <state width="1899" height="235" key="GridCell.Tab.0.right" timestamp="1597149421650">
+    <state width="936" height="129" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
+    <state width="936" height="129" key="GridCell.Tab.0.right" timestamp="1597203774567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597149421650" />
+    <state width="936" height="129" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
     <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1595069379885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -662,10 +662,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597140453441">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597149600040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597140453441" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597149600040" />
     <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595577020168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -678,10 +678,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1594912755595" />
-    <state x="944" y="261" key="git4idea.merge.GitPullDialog" timestamp="1595481085260">
+    <state x="944" y="261" key="git4idea.merge.GitPullDialog" timestamp="1597203162525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="944" y="261" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595481085260" />
+    <state x="944" y="261" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597203162525" />
     <state x="1233" y="383" key="git4idea.rebase.GitRebaseDialog" timestamp="1595480835317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

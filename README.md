@@ -1,5 +1,5 @@
 # 南京师范大学智能车队  
-**branch：final** 为决赛项目，复赛项目见**branch：2.0**
+**branch：final** 为决赛项目，复赛项目见**branch：2.0**  
 #决赛项目  
 ##项目一：人车跟随  
 FollowGreen.py  
