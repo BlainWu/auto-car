@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beae6085-96d7-4308-828b-60c04711af42" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PerspectiveTrans.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPF_demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APF-demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/path_planning_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path_planning_demo.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +94,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../algorithum-learning" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
@@ -97,8 +102,8 @@
       <recent name="R:\智能车\codes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.path_planning_demo">
-    <configuration name="Auto_Run_with_Line" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PerspectiveTrans">
+    <configuration name="A-star" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,7 +115,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Auto_Run_with_Line.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/A-star.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PerspectiveTrans" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,7 +157,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PerspectiveTrans.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,7 +166,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="opt_tools" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RPF_demo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,7 +178,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opt_tools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RPF_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,7 +187,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="path_planning_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RPF_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,7 +199,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="R:\智能车\codes\path_planning_demo.py" />
+      <option name="SCRIPT_NAME" value="R:\智能车\codes\RPF_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RPF_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="codes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="R:\智能车\codes\RPF_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.path_planning_demo" />
+        <item itemvalue="Python.PerspectiveTrans" />
+        <item itemvalue="Python.RPF_demo (1)" />
+        <item itemvalue="Python.A-star" />
+        <item itemvalue="Python.RPF_demo" />
         <item itemvalue="Python.ObstacleAvoidance" />
-        <item itemvalue="Python.learning" />
-        <item itemvalue="Python.opt_tools" />
-        <item itemvalue="Python.Auto_Run_with_Line" />
       </list>
     </recent_temporary>
   </component>
@@ -223,20 +249,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594640557864</updated>
-    </task>
-    <task id="LOCAL-00004" summary="update">
-      <created>1594784040517</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1594784040517</updated>
-    </task>
-    <task id="LOCAL-00005" summary="update">
-      <created>1594792923058</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1594792923058</updated>
     </task>
     <task id="LOCAL-00006" summary="update">
       <created>1594806214895</created>
@@ -567,7 +579,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597149596962</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="update">
+      <created>1597205506521</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1597205506521</updated>
+    </task>
+    <task id="LOCAL-00054" summary="update">
+      <created>1597206003149</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1597206003149</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -606,10 +632,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="972" y="337" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595484363773" />
-    <state x="1172" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595482087701">
+    <state x="1172" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597319267897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1172" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595482087701" />
+    <state x="1172" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597319267897" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1595418877903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -618,42 +644,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597129700800" />
-    <state width="936" height="129" key="GridCell.Tab.0.bottom" timestamp="1597203774567">
+    <state width="936" height="165" key="GridCell.Tab.0.bottom" timestamp="1597322226268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="129" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
-    <state width="936" height="129" key="GridCell.Tab.0.center" timestamp="1597203774567">
+    <state width="936" height="165" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597322226268" />
+    <state width="936" height="165" key="GridCell.Tab.0.center" timestamp="1597322226268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="129" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
-    <state width="936" height="129" key="GridCell.Tab.0.left" timestamp="1597203774567">
+    <state width="936" height="165" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597322226268" />
+    <state width="936" height="165" key="GridCell.Tab.0.left" timestamp="1597322226268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="129" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
-    <state width="936" height="129" key="GridCell.Tab.0.right" timestamp="1597203774567">
+    <state width="936" height="165" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597322226268" />
+    <state width="936" height="165" key="GridCell.Tab.0.right" timestamp="1597322226268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="129" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597203774567" />
-    <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1595069379885">
+    <state width="936" height="165" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597322226268" />
+    <state width="995" height="340" key="GridCell.Tab.1.bottom" timestamp="1597220413972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595069379885" />
-    <state width="1899" height="344" key="GridCell.Tab.1.center" timestamp="1595069379884">
+    <state width="995" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597220413972" />
+    <state width="995" height="340" key="GridCell.Tab.1.center" timestamp="1597220413972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595069379884" />
-    <state width="1899" height="344" key="GridCell.Tab.1.left" timestamp="1595069379884">
+    <state width="995" height="340" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597220413972" />
+    <state width="995" height="340" key="GridCell.Tab.1.left" timestamp="1597220413972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595069379884" />
-    <state width="1899" height="344" key="GridCell.Tab.1.right" timestamp="1595069379885">
+    <state width="995" height="340" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597220413972" />
+    <state width="995" height="340" key="GridCell.Tab.1.right" timestamp="1597220413972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595069379885" />
-    <state x="1304" y="224" key="RollbackChangesDialog" timestamp="1595063270046">
+    <state width="995" height="340" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597220413972" />
+    <state x="1304" y="224" key="RollbackChangesDialog" timestamp="1597214354195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1304" y="224" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595063270046" />
+    <state x="1304" y="224" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597214354195" />
     <state x="710" y="197" key="SettingsEditor" timestamp="1597129918429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -662,10 +688,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="226" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595480833487" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597149600040">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597206025582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597149600040" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597206025582" />
     <state x="797" y="52" width="774" height="847" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595577020168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
